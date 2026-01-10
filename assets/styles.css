@@ -7,6 +7,7 @@
   --muted: rgba(230, 237, 243, 0.75);
   --panel: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.14);
+  --link: #8bbcff;
 }
 
 html,
@@ -29,6 +30,7 @@ body {
     radial-gradient(1000px circle at 80% 10%, rgba(123, 255, 203, 0.12), transparent 40%),
     var(--bg);
   color: var(--fg);
+  line-height: 1.55;
 }
 
 .container {
@@ -37,13 +39,30 @@ body {
   padding: 48px 20px;
 }
 
-h1 {
-  margin: 0 0 12px;
-  font-size: 40px;
+.hero {
+  margin: 0 0 28px;
+}
+
+h1,
+h2,
+h3 {
   letter-spacing: -0.02em;
 }
 
+h1 {
+  margin: 0 0 10px;
+  font-size: 44px;
+}
+
 p {
+  margin: 0 0 14px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
   margin: 0;
   color: var(--muted);
   background: var(--panel);
@@ -51,4 +70,46 @@ p {
   border-radius: 12px;
   padding: 12px 14px;
   display: inline-block;
+}
+
+section {
+  padding: 18px 16px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  margin: 0 0 16px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 18px 0 10px;
+  font-size: 16px;
+  color: rgba(230, 237, 243, 0.9);
+}
+
+ul {
+  margin: 0 0 14px 18px;
+  padding: 0;
+  color: var(--muted);
+}
+
+li {
+  margin: 6px 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.final p {
+  color: rgba(230, 237, 243, 0.82);
 }
