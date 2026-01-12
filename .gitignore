@@ -7,3 +7,7 @@ dist/
 .parcel-cache/
 .next/
 out/
+
+# Internal/local artifacts (not for public repo history)
+updates/
+serve.mjs
